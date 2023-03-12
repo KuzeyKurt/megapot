@@ -16,4 +16,5 @@
 <li>Сервис может уведомлять о ближайших турнирах</li>
 <li>Ведение турнирной сетки и отображение актуальной информации по каждому турниру</li>
 </ul>
-![image](https://user-images.githubusercontent.com/72691339/224559018-0e69c0bd-8cfe-4933-8f3c-64c3bc11c870.png)
+
+![logo](https://user-images.githubusercontent.com/72691339/224559148-e14d07a8-e1e9-4654-a2b4-bf32e92a6136.png)
