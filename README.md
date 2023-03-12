@@ -1,4 +1,4 @@
-# megapot
+
 ![logo](https://user-images.githubusercontent.com/72691339/224559148-e14d07a8-e1e9-4654-a2b4-bf32e92a6136.png)
 
 <h1> MEGAPOT </h1>
