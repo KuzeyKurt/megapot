@@ -1,0 +1,23 @@
+{
+  "name": "megapot",
+  "version": "1.0.0",
+  "description": "Сервис для организаторов, спонсоров и участников турнира, где каждый из них находит то, что их интересует",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "sass src/scss/index.scss build/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuzeyKurt/megapot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuzeyKurt/megapot/issues"
+  },
+  "homepage": "https://github.com/KuzeyKurt/megapot#readme",
+  "devDependencies": {
+    "sass": "^1.59.2"
+  }
+}

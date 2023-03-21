@@ -1,0 +1,64 @@
+@import "../config/variables.scss";
+
+.header{
+    width: 100%; 
+    background-color: $black; 
+    font-style: normal;
+    padding: 0 5%;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display:flex;    
+    }
+
+    &__title {
+        /* font-weight: 900; */
+        font-family: "Russo One", sans-serif;
+        font-style: normal;
+        font-size: 48px;
+        line-height: 58px;
+    
+        &_part1 {
+            color: $yellow;
+        }
+
+        &_part2 {
+            color: $purple;
+        }
+    }
+
+    &__btn {
+        padding: 9px;
+        border-radius: 5px;
+        font-family: "Russo One", sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+
+        &:hover {
+            opacity: .9;
+            cursor: pointer;
+        }
+
+        &:focus {
+            opacity: .9;
+            outline: none;
+        }
+
+        &_purple {
+            background-color: $purple;
+        }
+
+        &_yellow {
+            background-color: $yellow;
+            margin-left: 9px;
+        }
+    }
+}
+
