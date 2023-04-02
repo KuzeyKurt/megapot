@@ -5,6 +5,39 @@
   background-color: #000000;
   font-style: normal;
   padding: 0 5%;
+  /* &__btn {
+      padding: 9px;
+      border-radius: 5px;
+      font-family: "Russo One", sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: $white;
+
+      &:hover {
+          opacity: .9;
+          cursor: pointer;
+      }
+
+      &:focus {
+          opacity: .9;
+          outline: none;
+      }
+
+      &:active {
+          transform: scale(0.98);
+          box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+      }
+
+      &_purple {
+          background-color: $purple;
+      }
+
+      &_yellow {
+          background-color: $yellow;
+          margin-left: 9px;
+      }
+  } */
 }
 .header__container {
   display: flex;
@@ -27,7 +60,93 @@
 .header__title_part2 {
   color: #A347FF;
 }
-.header__btn {
+
+.form__container {
+  max-width: 1046px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+.form__page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 833px;
+  background-color: #000000;
+  border-radius: 25px;
+  font-family: "Russo One", sans-serif;
+}
+.form__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 58px;
+}
+.form__title_purple {
+  background-color: #A347FF;
+}
+.form__title_yellow {
+  background-color: #FFB800;
+}
+.form-item {
+  margin: 1.5rem 131px 0;
+  display: flex;
+  flex-direction: column;
+}
+.form-item__label {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+.form-item__input {
+  height: 3rem;
+  width: 100%;
+  border: 3px solid;
+  border-radius: 10px;
+  background-color: #000000;
+  padding-left: 21px;
+  color: #FFFFFF;
+}
+.form-item__input ::placeholder {
+  color: #959595;
+}
+.form-item__input_purple {
+  border-color: #A347FF;
+}
+.form-item__input_yellow {
+  border-color: #FFB800;
+}
+.form-item__ifYouHave {
+  color: #959595;
+  font-size: 14px;
+  line-height: 17px;
+}
+.form-item__ifYouHave_purple {
+  color: #A347FF;
+  background-color: #000000;
+}
+.form-item__ifYouHave_yellow {
+  color: #FFB800;
+  background-color: #000000;
+}
+.form-item_last-child {
+  margin-bottom: 1.3rem;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+}
+
+.btn {
   padding: 9px;
   border-radius: 5px;
   font-family: "Russo One", sans-serif;
@@ -36,18 +155,22 @@
   line-height: 19px;
   color: #FFFFFF;
 }
-.header__btn:hover {
+.btn:hover {
   opacity: 0.9;
   cursor: pointer;
 }
-.header__btn:focus {
+.btn:focus {
   opacity: 0.9;
   outline: none;
 }
-.header__btn_purple {
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.btn_purple {
   background-color: #A347FF;
 }
-.header__btn_yellow {
+.btn_yellow {
   background-color: #FFB800;
   margin-left: 9px;
 }
@@ -80,6 +203,7 @@ nav, footer, header, aside {
 html, body {
   height: 100%;
   width: 100%;
+  font-family: "Russo One", sans-serif;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -130,6 +254,11 @@ h1, h2, h3, h4, h5, h6 {
 .bigred {
   font-size: 20px;
   color: red;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #000000 inset;
+  -webkit-text-fill-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=styles.css.map */

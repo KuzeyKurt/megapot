@@ -1,5 +1,8 @@
 @import "./config/variables.scss";//переменнные вроде подключаются уже в компонентах
 @import "./components/header.scss";
+@import "./components/reg-log.scss";
+@import "./components/main.scss";
+@import "./components/button.scss";
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 //Импортируем все модули scss
@@ -23,6 +26,7 @@ nav,footer,header,aside{display: block;}
 html,body{
 	height: 100%;
 	width: 100%;
+	font-family: "Russo One", sans-serif;////////
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -47,3 +51,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 20px;
 	color: red;
 }
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px $black inset;
+	-webkit-text-fill-color: $white;
+  }

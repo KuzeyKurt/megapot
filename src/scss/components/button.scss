@@ -1,0 +1,33 @@
+.btn {
+    padding: 9px;
+    border-radius: 5px;
+    font-family: "Russo One", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+
+    &:hover {
+        opacity: .9;
+        cursor: pointer;
+    }
+
+    &:focus {
+        opacity: .9;
+        outline: none;
+    }
+
+    &:active {
+        transform: scale(0.98);
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    }
+
+    &_purple {
+        background-color: $purple;
+    }
+
+    &_yellow {
+        background-color: $yellow;
+        margin-left: 9px;
+    }
+}
