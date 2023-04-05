@@ -8,6 +8,6 @@ class LandingController extends Controller
 {
     function landingShow()
     {
-        return 'Landing page of Megapot';
+        return view('landing');
     }
 }

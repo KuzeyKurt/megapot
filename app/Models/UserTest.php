@@ -6,6 +6,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
 
 class UserTest extends Authenticatable
 {
@@ -18,6 +22,6 @@ class UserTest extends Authenticatable
     ];
 
     protected $hidden = [
-        'password', 'created_at'
+         'password', 'updated_at', 'created_at'
     ];
 }

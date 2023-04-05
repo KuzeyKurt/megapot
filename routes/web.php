@@ -31,13 +31,17 @@ Route::get('/', function () {
 
 Route::get('pageone', [MyPlaceController::class, 'index']);
 
-Route::get('registration', [RegisterController::class, 'registerGet']);
+
+Route::get('registration', [RegisterController::class, 'registerGet'])->name('register');
+Route::post('registration', [RegisterController::class, 'registerPost'])->name('register');
+
 
 Route::get('page-login', [LoginController::class, 'loginValidation']);
 
 Route::get('landing-page', [LandingController::class, 'landingShow']);
 
-Route::get('profile-page', [ProfileController::class, 'profilePage']);
+Route::view('profile-page', 'profile-page')->middleware('auth')->name('profile-page');
+// Route::get('profile-page', [ProfileController::class, 'profilePage']);
 
 
 Route::get('tournments', [TournmentProfile::class, 'tournmentList']);
