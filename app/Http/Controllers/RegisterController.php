@@ -28,7 +28,7 @@ class RegisterController extends Controller
 
       Auth::login($user_test);
 
-      return redirect('/profile-page');
+      return redirect('profile-page');
 
     }
 

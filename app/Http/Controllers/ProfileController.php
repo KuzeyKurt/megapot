@@ -8,6 +8,6 @@ class ProfileController extends Controller
 {
    public function profilePage()
    {
-    return view('authorized');
+    return view('profile-page');
    }
 }

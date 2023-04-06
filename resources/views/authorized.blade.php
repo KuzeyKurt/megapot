@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../build/styles.css">
-    <title>MegaPot</title>
+    <title>Document</title>
 </head>
 <body class="page">
     <header class="header">
@@ -24,6 +24,8 @@
             </div>
         </div>
     </header>
+    <div class="header__title header__title_part2">WELCOME, AUTHORIZED USER!</div>
+
     
 </body>
 </html>
