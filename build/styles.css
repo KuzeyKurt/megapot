@@ -1,43 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 .header {
+  position: fixed;
+  z-index: 500;
   width: 100%;
   background-color: #000000;
   font-style: normal;
   padding: 0 5%;
-  /* &__btn {
-      padding: 9px;
-      border-radius: 5px;
-      font-family: "Russo One", sans-serif;
-      font-style: normal;
-      font-size: 16px;
-      line-height: 19px;
-      color: $white;
-
-      &:hover {
-          opacity: .9;
-          cursor: pointer;
-      }
-
-      &:focus {
-          opacity: .9;
-          outline: none;
-      }
-
-      &:active {
-          transform: scale(0.98);
-          box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-      }
-
-      &_purple {
-          background-color: $purple;
-      }
-
-      &_yellow {
-          background-color: $yellow;
-          margin-left: 9px;
-      }
-  } */
 }
 .header__container {
   display: flex;
@@ -100,7 +69,7 @@
   flex-direction: column;
 }
 .form-item__label {
-  color: white;
+  color: #FFFFFF;
   font-family: "Russo One", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -140,19 +109,83 @@
   margin-bottom: 1.3rem;
 }
 
-.main {
+/* .main {
+    width: 100%;
+    height: 100%; //Временно
+    background-color: $gray1;
+    flex: 1 1 auto;
+} */
+.page {
+  flex: 1 1 auto;
+  background-color: #161616;
+}
+.page__main-block {
+  padding: 0 5%;
+}
+
+.main-block {
+  position: relative;
+}
+.main-block__body {
+  position: relative;
+  z-index: 2;
+  padding: 178px 0px 191px 0px;
+  display: flex;
+}
+.main-block__half {
+  max-width: 850px;
+}
+.main-block__title {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 116.2790697674%;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+.main-block__text {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 184%;
+  color: #D9D9D9;
+}
+.main-block__btn {
+  margin-top: 130px;
+}
+.main-block__image {
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #161616;
+  top: 0;
+  left: 0;
+}
+.main-block__image img {
+  filter: blur(6px);
+}
+
+.right-half__image {
+  width: 735px;
+  height: 490px;
+}
+.right-half__image img {
+  border-radius: 43px;
+}
+.right-half__image img:first-child {
+  filter: blur(6px);
+  position: absolute;
+  transform: translate(25px, 25px);
+}
+.right-half__image img:last-child {
+  position: absolute;
 }
 
 .btn {
-  padding: 9px;
   border-radius: 5px;
   font-family: "Russo One", sans-serif;
   font-style: normal;
-  font-size: 16px;
-  line-height: 19px;
   color: #FFFFFF;
 }
 .btn:hover {
@@ -173,6 +206,19 @@
 .btn_yellow {
   background-color: #FFB800;
   margin-left: 9px;
+}
+
+.header__btn {
+  padding: 9px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.main-block__btn {
+  padding: 23px 85px;
+  font-size: 24px;
+  line-height: 29px;
+  width: 393px;
 }
 
 /*Обнуление*/
@@ -203,7 +249,6 @@ nav, footer, header, aside {
 html, body {
   height: 100%;
   width: 100%;
-  font-family: "Russo One", sans-serif;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -259,6 +304,31 @@ h1, h2, h3, h4, h5, h6 {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #000000 inset;
   -webkit-text-fill-color: #FFFFFF;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+/* ._ibg {
+	position: relative;
+} */
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
