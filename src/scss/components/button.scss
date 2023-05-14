@@ -35,6 +35,25 @@
         font-size: 16px;
         line-height: 19px;
     }
+
+    &-btns-svg {
+        background-color: $black;
+
+        &:hover {
+            opacity: .9;
+            cursor: pointer;
+        }
+    
+        &:focus {
+            opacity: .9;
+            outline: none;
+        }
+    
+        &:active {
+            transform: scale(0.98);
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        }
+    }
 }
 
 .main-block {
