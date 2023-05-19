@@ -365,16 +365,17 @@
   border-radius: 10px;
 }
 .preview__card-container {
-  width: 48%;
-  display: inline-block;
-  padding: 19px;
-  box-sizing: border-box;
+  width: 550px;
+  height: 299px;
+  margin: 20px;
 }
 .preview__box {
   background-color: #212121;
   border-radius: 19px;
-  padding: 69px 100px;
   margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .preview__row {
   font-family: "Play", sans-serif;
