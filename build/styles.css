@@ -340,9 +340,6 @@
 
 .preview {
   overflow: hidden;
-  /* &__container {
-
-  } */
 }
 .preview__title {
   font-family: "Play_normal", sans-serif;
@@ -372,6 +369,66 @@
   display: inline-block;
   padding: 19px;
   box-sizing: border-box;
+}
+.preview__box {
+  background-color: #212121;
+  border-radius: 19px;
+  padding: 69px 100px;
+  margin: 15px;
+}
+.preview__row {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+}
+.preview__row-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.preview__row_right-side {
+  color: #A347FF;
+}
+.preview__row_left-side {
+  color: #FFB800;
+}
+
+.news-cards {
+  padding-top: 13px;
+  padding-right: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.news-card {
+  width: 350px;
+  height: 400px;
+  background: #464646;
+  box-shadow: 8px 8px 8px rgb(126, 125, 125);
+  border-radius: 10px;
+  padding: 7px;
+  margin: 0 0 50px 27px;
+}
+.news-card__title {
+  padding: 29px 0px;
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.news-card__description {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #FFFFFF;
 }
 
 /*Обнуление*/
