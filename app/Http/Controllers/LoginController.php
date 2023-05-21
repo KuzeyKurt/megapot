@@ -8,6 +8,6 @@ class LoginController extends Controller
 {
     function loginValidation()
     {
-        return 'This log in page';
+        return view('auth.login');
     }
 }

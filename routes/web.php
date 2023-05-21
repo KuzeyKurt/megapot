@@ -29,19 +29,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('pageone', [MyPlaceController::class, 'index'])->name('index');
+Route::get('pageone', [MyPlaceController::class, 'index'])->name('index'); // временно, проверить, как меня редиректит на страницу page-one 
 
 
-Route::get('registration', [RegisterController::class, 'registerGet'])->name('register');
-Route::post('registration', [RegisterController::class, 'registerPost'])->name('register');
+Route::get('registration', [RegisterController::class, 'registerGet'])->middleware('guest')->name('register');
+Route::post('registration', [RegisterController::class, 'registerPost'])->middleware('guest');
+
+// Route::get('registration', 'RegisterController@registerGet')->middleware('guest')->name('register');
+// Route::post('registration', 'RegisterController@registerPost')->middleware('guest');
 
 
-Route::get('page-login', [LoginController::class, 'loginValidation']);
+Route::get('login', [LoginController::class, 'loginValidation']);
 
 Route::get('landing-page', [LandingController::class, 'landingShow'])->name('landing');
 
-Route::view('profile-page', 'profile-page')->middleware('auth')->name('profile-page');
-//Route::get('profile-page', [ProfileController::class, 'profilePage']);
+// Route::view('profile-page', [ProfileController::class, 'profile-page'])->middleware('auth')->name('profile-page');
+Route::get('/profile-page', [ProfileController::class, 'profilePage'])->middleware('auth')->name('profile-page');
+// Route::get('/profile-page', profilePage())->middleware('auth')->name('profile-page');
 
 
 Route::get('tournments', [TournmentProfile::class, 'tournmentList']);

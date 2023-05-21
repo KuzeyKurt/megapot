@@ -80,9 +80,8 @@
   border-radius: 25px 25px 0 0;
   width: 100%;
   font-style: normal;
-  font-size: 28px;
+  font-size: 48px;
   line-height: 58px;
-  color:#FFFFFF ;
 }
 .form__title_purple {
   background-color: #A347FF;
@@ -255,60 +254,6 @@ h1, h2, h3, h4, h5, h6 {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #000000 inset;
   -webkit-text-fill-color: #FFFFFF;
-}
-
-
-
-.header {
-  width: 100%;
-  background-color: #000000;
-  font-style: normal;
-  padding: 0 5%;
-}
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__logo {
-  display: flex;
-}
-.header__title {
-  /* font-weight: 900; */
-  font-family: "Russo One", sans-serif;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 72px;
-}
-.header__title_part1 {
-  color: #FFB800;
-}
-.header__title_part2 {
-  color: #A347FF;
-}
-.header__btn {
-  padding: 9px;
-  border-radius: 5px;
-  font-family: "Russo One", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-.header__btn:hover {
-  opacity: 0.9;
-  cursor: pointer;
-}
-.header__btn:focus {
-  opacity: 0.9;
-  outline: none;
-}
-.header__btn_purple {
-  background-color: #A347FF;
-}
-.header__btn_yellow {
-  background-color: #FFB800;
-  margin-left: 9px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -18,18 +18,18 @@ class RegisterController extends Controller
 
     public function registerPost(Request $request) // что выводим после регистрации, поэтому и метод POST-запрос
     {
-       // dd($request->all());
-      $user_test = UserTest::create(array(
+      
+      $user = UserTest::create(array(
         // 'user_id' => '1',
         'name' => $request->name,
         'email' => $request->email,
+        'nickname' => $request->nickname,
+        'date' => $request->birthday,
         'password' => $request->password
       ));
 
-      Auth::login($user_test);
-
-      return redirect('profile-page');
-
+      Auth::login($user);
+      return redirect('/profile-page');
     }
 
    
