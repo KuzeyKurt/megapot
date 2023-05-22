@@ -1,0 +1,89 @@
+.services {
+
+    &__container {
+        padding-top: 105px;
+        padding-bottom: 130px;
+    }
+
+    &__title {
+        font-family: 'Russo One', sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 43px;
+        line-height: 116.2790697674%;
+        text-align: center;
+        padding-bottom: 100px;
+        
+        &_part1{
+            color: $yellow;
+        }
+
+        &_part2{
+            color: $purple;
+        }
+        
+        &_part3{
+            color: $white;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    &__column {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Russo One';
+        font-style: normal;
+        color: $white;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__btns {
+        text-align: center;
+        padding-top: 75px;
+    }
+
+    &__btn {
+        padding: 23px 85px;
+        font-size: 24px;
+        line-height: 29px;
+        width: 393px;
+    }
+}
+
+.item-service {
+
+    &__icon {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-size: 19px;
+        line-height: 29px;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 18px;
+        line-height: 21px;
+        height: 63px;
+    }
+}
