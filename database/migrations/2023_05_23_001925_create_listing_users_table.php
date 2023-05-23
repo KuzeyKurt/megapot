@@ -13,14 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('disciplines', function (Blueprint $table )
-        {
-           $table->increments('discipline_id');
-           $table->string('name');
-           $table->date('realise_date');
-           $table->integer('ageLimit'); 
+        Schema::create('listing_users', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
         });
-        
     }
 
     /**
@@ -30,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('listing_users');
     }
 };

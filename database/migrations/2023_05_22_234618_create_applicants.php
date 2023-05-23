@@ -13,14 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('disciplines', function (Blueprint $table )
-        {
-           $table->increments('discipline_id');
-           $table->string('name');
-           $table->date('realise_date');
-           $table->integer('ageLimit'); 
+        Schema::create('applicants', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamps();
         });
-        
     }
 
     /**
@@ -30,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('applicants');
     }
 };

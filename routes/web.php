@@ -39,7 +39,7 @@ Route::post('registration', [RegisterController::class, 'registerPost'])->middle
 // Route::post('registration', 'RegisterController@registerPost')->middleware('guest');
 
 
-Route::get('login', [LoginController::class, 'loginValidation']);
+Route::get('login', [LoginController::class, 'loginValidation'])->name('login');
 
 Route::get('landing-page', [LandingController::class, 'landingShow'])->name('landing');
 

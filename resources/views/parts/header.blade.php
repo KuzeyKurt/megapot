@@ -14,12 +14,12 @@
 <header class="header">
     <div class="header__container">
         <div class="header__logo">
-            <h1 class="header__title header__title_part1">MEGA</h1>
-            <h1 class="header__title header__title_part2">POT</h1>
+            <a href="{{route('landing')}}">  <h1 class="header__title header__title_part1"> MEGA</h1></a>
+            <a href="{{route('landing')}}">  <h1 class="header__title header__title_part2">POT</h1></a>
         </div>
         <div class="header__btns">
-            <button class="header__btn header__btn_purple">Регистрация</button>
-            <button class="header__btn header__btn_yellow">Войти</button>
+            <button onclick="window.location.href='{{route('register')}}'" class="header__btn btn header__btn_purple btn_purple"> Регистрация </button>
+            <button onclick="window.location.href='{{route('login')}}'" class="header__btn btn header__btn_yellow btn_yellow">Войти</button>
         </div>
     </div>
 </header>

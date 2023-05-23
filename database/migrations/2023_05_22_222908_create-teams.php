@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('disciplines', function (Blueprint $table )
+        Schema::create('teams', function (Blueprint $table )
         {
-           $table->increments('discipline_id');
-           $table->string('name');
-           $table->date('realise_date');
-           $table->integer('ageLimit'); 
+           $table->id();
+           $table->string('name')->unique();
+           $table->string('logo_url');
+           $table->timestamp('created_at');
+           $table->timestamp('updated_at'); 
         });
-        
     }
 
     /**

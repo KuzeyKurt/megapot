@@ -13,12 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('discipline', function (Blueprint $table) {
+        Schema::create('tournments', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            $table->string('name');
-            $table->integer('age_limit'); // 16+ 18+
-            $table->date('realise_date');
+            $table->string('name')->unique();
+            $table->date('start_date');
+            $table->date('final_date');
+            $table->integer('prize_found')->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('discipline');
+        Schema::dropIfExists('tournments');
     }
 };

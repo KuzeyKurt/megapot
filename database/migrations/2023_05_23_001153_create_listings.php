@@ -13,14 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('disciplines', function (Blueprint $table )
-        {
-           $table->increments('discipline_id');
-           $table->string('name');
-           $table->date('realise_date');
-           $table->integer('ageLimit'); 
+        Schema::create('listings', function (Blueprint $table) { // тут будут хранится заказы с мегапот
+            $table->id();
+            $table->timestamps();
+            $table->time('start_game');
+            $table->time('end_time');
+            
         });
-        
     }
 
     /**
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('listings');
     }
 };
