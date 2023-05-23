@@ -1,0 +1,99 @@
+.form {
+    &__container {
+        max-width: 1046px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+    }
+
+    &__page {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 833px;
+        //padding: 0 121px;
+        background-color: $black;
+        border-radius: 25px;
+        font-family: "Russo One", sans-serif;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //margin: 0 -121xp;
+        border-radius: 25px 25px 0 0;
+        width: 100%;
+        //height: 86px;
+        font-style: normal;
+        font-size: 48px;
+        line-height: 58px;
+        
+        &_purple {
+            background-color: $purple;  
+        }
+
+        &_yellow {
+            background-color: $yellow;  
+        }
+    }
+
+    &-item {
+        margin: 1.5rem 131px 0;
+        display: flex;
+        flex-direction: column;
+        //align-items: stretch; 
+       
+        &__label {
+            color: $white;
+            font-family: "Russo One", sans-serif;
+            font-style: normal;
+            font-size: 18px;
+        }
+        
+        &__input {
+            height: 3rem;
+            width: 100%;
+            border: 3px solid;
+            border-radius: 10px;
+            background-color: $black;
+            padding-left: 21px;
+            color: $white;
+
+            ::placeholder {
+                color: $gray3;
+                //margin-left: 21px;
+            }
+
+            &_purple {
+                border-color: $purple;
+            }
+
+            &_yellow {
+                border-color: $yellow;
+            }
+        }
+
+        &__ifYouHave {
+            color:$gray3;
+            font-size: 14px;
+            line-height: 17px;
+    
+            &_purple {
+                color: $purple;
+                background-color: $black;
+            }
+        
+            &_yellow {
+                color: $yellow;
+                background-color: $black;
+            }
+        }
+
+        &_last-child{
+            margin-bottom: 1.3rem;
+        }
+    }
+}

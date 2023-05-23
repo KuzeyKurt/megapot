@@ -1,0 +1,35 @@
+.header{
+    position:fixed;//висит всегла сверху
+    z-index: 500;
+    width: 100%; 
+    background-color: $black; 
+    font-style: normal;
+    padding: 0 5%;//возможно временно 
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display:flex;    
+    }
+
+    &__title {
+        /* font-weight: 900; */
+        font-family: "Russo One", sans-serif;
+        font-style: normal;
+        font-size: 48px;
+        line-height: 58px;
+    
+        &_part1 {
+            color: $yellow;
+        }
+
+        &_part2 {
+            color: $purple;
+        }
+    }
+}
+

@@ -1,0 +1,90 @@
+@import "./config/variables.scss";//переменнные вроде подключаются уже в компонентах
+@import "../fonts/fonts.scss";
+@import "./components/header.scss";
+@import "./components/reg-log.scss";
+@import "./components/main.scss";
+@import "./components/button.scss";
+@import "./profile.scss";
+@import "./components/news-card.scss";
+@import "./components/services.scss";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+//Импортируем все модули scss
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	//font-family: "Russo One", sans-serif;////////
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px $black inset;
+	-webkit-text-fill-color: $white;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: 1600px;//мб 1400, но мало
+	//padding: 0 5px;//Прилипание (мб надо убрать)
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+
+/* ._ibg {
+	position: relative;
+} */
+
+._ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+ 

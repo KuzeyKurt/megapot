@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../build/styles.css">
+    <script defer src="./reg-form.js"></script>
+    <title>MEGAPOT</title>
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <h1 class="header__title header__title_part1">MEGA</h1>
+                <h1 class="header__title header__title_part2">POT</h1>
+            </div>
+            <div class="header__btns">
+                <button onclick="showLoginForm()" class="header__btn btn btn_yellow">Войти</button>
+            </div>  
+        </div>
+    </header>
+    <main class="main">
+        <div class="form__container">
+            <div class="form__page">
+                <div class="form__title form__title_purple">
+                    <h1 class="">РЕГИСТРАЦИЯ</h1>
+                </div>
+                <form class="form" action="#">
+                    <div class="form-item">
+                        <label class="form-item__label" for="name">Имя:</label>
+                        <input class="form-item__input form-item__input_purple" type="text" id="name" name="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-item">
+                        <label class="form-item__label" for="email">E-mail:</label>
+                        <input class="form-item__input form-item__input_purple" type="email" id="email" name="email" placeholder="Введите e-mail">
+                    </div>
+                    
+                    <div class="form-item">
+                        <label class="form-item__label" for="nickname">Никнейм:</label>
+                        <input class="form-item__input form-item__input_purple" type="text" id="nickname" name="nickname" placeholder="Придумайте никнейм">
+                    </div>
+
+                    <div class="form-item">
+                        <label class="form-item__label" for="date">Дата рождения:</label>
+                        <input class="form-item__input form-item__input_purple" type="text" id="date" name="date" placeholder="Введите дату рождения" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    </div>
+                    
+                    <div class="form-item">
+                        <label class="form-item__label" for="password">Пароль:</label>
+                        <input class="form-item__input form-item__input_purple" type="password" id="password" name="password" placeholder="Придумайте пароль">
+                    </div>
+                    
+                    <div class="form-item">
+                        <label class="form-item__label" for="confirmPassword">Подтвердить пароль:</label>
+                        <input class="form-item__input form-item__input_purple" type="password" id="confirmPassword" name="confirmPassword" placeholder="Введите пароль еще раз">
+                    </div>
+
+                    <div class="form-item">
+                        <label class="form-item__ifYouHave">Уже есть аккаунт? Тогда можно 
+                            <button class="form-item__ifYouHave_yellow" onclick="showLoginForm()">Войти</button>
+                        </label>
+                    </div>
+
+                    <div class="form-item form-item_last-child">
+                        <button type="submit" class="btn btn_purple">Создать аккаунт</button>
+                    </div>
+                </form>
+
+                <!-- <script>
+                    function showLoginForm() {
+                    // здесь можно добавить код для отображения формы входа
+                    }
+                </script> -->
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
