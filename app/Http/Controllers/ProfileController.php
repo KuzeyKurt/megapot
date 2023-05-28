@@ -8,6 +8,8 @@ class ProfileController extends Controller
 {
    public function profilePage()
    {
-    return view('profile-page');
+      $user = auth()->user();
+
+    return view('authorized.profile-page', compact('user'));
    }
 }

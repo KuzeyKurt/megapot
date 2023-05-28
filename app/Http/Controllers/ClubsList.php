@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Models\Venue;
 
 class ClubsList extends Controller
 {
     public function clubsList()
     {
-        return 'Тут вы можете посмотреть на карте компьютерные заведения своего города.
-                There you can view cumputer clubs of your city on map.';
+        $user = auth()->user();
+        $venues = Venue::all();
+        return view('authorized.venues', compact('venues', 'user'));
     }
 }

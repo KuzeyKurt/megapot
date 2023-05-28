@@ -20,7 +20,8 @@
                 <div class="form__title form__title_yellow">
                     <h1 class="">ВХОД</h1>
                 </div>
-                <form class="form" action="#">
+                <form class="form" action="{{route('login')}}" method="POST" novalidate>
+                    @csrf
                     <div class="form-item">
                         <label class="form-item__label" for="email">E-mail:</label>
                         <input class="form-item__input form-item__input_yellow" type="email" id="email" name="email" placeholder="Введите e-mail">

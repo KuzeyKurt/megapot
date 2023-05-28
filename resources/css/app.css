@@ -387,6 +387,7 @@
   background: #FFFFFF;
   box-shadow: 12px 12px 12px rgb(70, 70, 70);
   border-radius: 10px;
+  /* margin-top: 20px; */
 }
 .preview__card img {
   width: 100%;
@@ -398,6 +399,7 @@
   width: 550px;
   height: 299px;
   margin: 20px;
+  margin-bottom: 70px;
 }
 .preview__box {
   background-color: #212121;
@@ -644,4 +646,32 @@ input:-webkit-autofill {
   object-fit: cover;
 }
 
+.user-info
+{
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+
+.info-card
+{
+  background-color: #212121;
+  height: 35px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.color_white
+{
+  color: #FFFFFF;
+}
+
+.tar
+{
+  text-align: right;
+  float: right;
+}
 /*# sourceMappingURL=styles.css.map */

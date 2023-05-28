@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use App\Models\UserTest;
 use App\Models\User;
 use App\Models\Model;
@@ -18,6 +19,8 @@ class RegisterController extends Controller
 
     public function registerPost(Request $request) // что выводим после регистрации, поэтому и метод POST-запрос
     {
+      // VALIDATION
+
       
       $user = UserTest::create(array(
         // 'user_id' => '1',
@@ -25,11 +28,11 @@ class RegisterController extends Controller
         'email' => $request->email,
         'nickname' => $request->nickname,
         'date' => $request->birthday,
-        'password' => $request->password
+        'password' => Hash::make($request->password)
       ));
 
       Auth::login($user);
-      return redirect('/profile-page');
+      return redirect('authorized/profile-page');
     }
 
    

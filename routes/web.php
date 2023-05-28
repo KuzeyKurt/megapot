@@ -7,8 +7,13 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TournmentProfile;
-use App\Http\Controllers\ClubsList;
+// use App\Http\Controllers\ClubsList;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DisciplineController;
+use App\Http\Controllers\SponsorsController;
+use App\Http\Controllers\ClubsList;
+use App\Http\Controllers\TeamListController;
+// use App\Http\Controllers\TournmentProfile;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,22 +40,32 @@ Route::get('pageone', [MyPlaceController::class, 'index'])->name('index'); // в
 Route::get('registration', [RegisterController::class, 'registerGet'])->middleware('guest')->name('register');
 Route::post('registration', [RegisterController::class, 'registerPost'])->middleware('guest');
 
+
+Route::get('login', [LoginController::class, 'create'])->middleware('guest')->name('login');
+Route::post('login', [LoginController::class, 'store'])->middleware('guest')->name('store');
+
 // Route::get('registration', 'RegisterController@registerGet')->middleware('guest')->name('register');
 // Route::post('registration', 'RegisterController@registerPost')->middleware('guest');
 
 
-Route::get('login', [LoginController::class, 'loginValidation'])->name('login');
+// Route::get('login', [LoginController::class, 'loginValidation'])->name('login');
 
 Route::get('landing-page', [LandingController::class, 'landingShow'])->name('landing');
 
 // Route::view('profile-page', [ProfileController::class, 'profile-page'])->middleware('auth')->name('profile-page');
-Route::get('/profile-page', [ProfileController::class, 'profilePage'])->middleware('auth')->name('profile-page');
+Route::get('authorized/profile-page', [ProfileController::class, 'profilePage'])->middleware('auth')->name('profile-page');
 // Route::get('/profile-page', profilePage())->middleware('auth')->name('profile-page');
 
 
 Route::get('tournments', [TournmentProfile::class, 'tournmentList']);
 
 Route::get('clubs', [ClubsList::class, 'clubsList']);
+Route::get('authorized/disciplines', [DisciplineController::class, 'index'])->middleware('auth')->name('disciplines');
+Route::get('authorized/sponsors', [SponsorsController::class, 'index'])->middleware('auth')->name('sponsors');
+Route::get('authorized/venues', [ClubsList::class, 'clubsList'])->middleware('auth')->name('venues');
+Route::get('authorized/tournments', [TournmentProfile::class, 'tournmentList'])->middleware('auth')->name('tournments');
+// Route::get('authorized/tournments', [TournmentProfile::class, 'tournmentList'])->middleware('auth')->name('tournments');
+Route::get('authorized/teams', [TeamListController::class, 'teamList'])->middleware('auth')->name('teams');
 
 
 
