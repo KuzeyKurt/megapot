@@ -8,14 +8,15 @@
 .page {
     flex: 1 1 auto;
     background-color: $gray1;
+
     //padding: 0 5%;//возможно временно (взял из хедера) Нужно уровнем ниже, изза белых отступов на фоне(фото)
     &__main-block {
-        padding: 0 5%;//возможно временно (взял из хедера)
+        padding: 0 5%; //возможно временно (взял из хедера)
     }
 }
 
 .main-block {
-    position: relative;//может надо убрать для следующих пейджей снизу
+    position: relative; //может надо убрать для следующих пейджей снизу
 
     /* &__container {
 
@@ -32,6 +33,10 @@
             display: flex;
             justify-content: space-between;
             padding-bottom: 85px;
+
+            &-evenly {
+                justify-content: space-around;
+            }
         }
     }
 
@@ -54,6 +59,17 @@
         padding-bottom: 25px;
         /* width: 100%;
         text-align: center; */
+
+        &_special {
+            color: $gray4;
+            text-align: right;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: 'Play', sans-serif;
+            font-size: 29px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
     }
 
     &__title {
@@ -70,10 +86,13 @@
         &_abs {
             position: relative;
             z-index: 1;
-            padding: 91px 0 0 0;
-            width: 100%;
+            //padding: 91px 200px 0 200px;
+            padding-top: 91px;
+            width: 50%;
             text-align: center;
             margin-bottom: -73px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         &_inner {
@@ -88,10 +107,16 @@
         font-size: 25px;
         line-height: calc(46 / 25 * 100%);
         color: $gray4;
-    
+
         &_pad {
             padding-bottom: 35px;
             line-height: 37px;
+        }
+
+        &_smaller {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: normal;
         }
     }
 
@@ -106,7 +131,7 @@
         top: 0;
         left: 0;
 
-        & img{
+        & img {
             filter: blur(6px)
         }
     }
@@ -116,8 +141,8 @@
     &__image {
         width: 735px;
         height: 490px;
-    
-        & img{
+
+        & img {
             border-radius: 43px;
         }
 
@@ -126,7 +151,8 @@
             position: absolute;
             transform: translate(25px, 25px);
         }
-        & img:last-child{
+
+        & img:last-child {
             position: absolute;
         }
     }
@@ -135,11 +161,19 @@
 .right-smaller-half {
     width: 777px;
 
+    &__planet-image {
+
+        & img {
+            width: 574px;
+            height: 430px;
+        }
+    }
+
     &__image {
         width: 600px;
         height: 400px;
-    
-        & img{
+
+        & img {
             border-radius: 30px;
             position: absolute;
 
@@ -155,12 +189,24 @@
             transform: translate(202px, 25px);
         }
 
-        &_front{
+        &_front {
             transform: translate(177px, 0px);
         }
 
-        &_another{
+        &_another {
             transform: translate(0px, 228px);
         }
     }
+}
+
+// .left-half {
+//     &__image {
+//         width: 735px;
+//         height: 490px;
+//     }
+
+// }
+
+.mb-125 {
+    margin-bottom: 125px;
 }
