@@ -1,34 +1,53 @@
-@import "./config/variables.scss";//переменнные вроде подключаются уже в компонентах
+@import "./config/variables.scss"; //переменнные вроде подключаются уже в компонентах
 @import "../fonts/fonts.scss";
 @import "./components/header.scss";
 @import "./components/reg-log.scss";
 @import "./components/main.scss";
 @import "./components/button.scss";
-@import "./profile.scss";
+@import "./pages/profile.scss";
 @import "./components/news-card.scss";
 @import "./components/services.scss";
 @import "./components/tournaments.scss";
+@import "./pages/tournament.scss";
+@import "./components/preview.scss";
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 //Импортируем все модули scss
 
 /*Обнуление*/
-*{
+* {
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
-*,*:before,*:after{
+
+*,
+*:before,
+*:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
 
-nav,footer,header,aside{display: block;}
+:focus,
+:active {
+	outline: none;
+}
 
-html,body{
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
 	height: 100%;
 	width: 100%;
 	//font-family: "Russo One", sans-serif;////////
@@ -39,20 +58,56 @@ html,body{
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-input,button,textarea{font-family:inherit;}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
 /*--------------------*/
 
-.bigred{
+.bigred {
 	font-size: 20px;
 	color: red;
 }
@@ -70,7 +125,7 @@ input:-webkit-autofill {
 }
 
 ._container {
-	max-width: 1600px;//мб 1400, но мало
+	max-width: 1600px; //мб 1400, но мало
 	//padding: 0 5px;//Прилипание (мб надо убрать)
 	margin: 0 auto;
 	box-sizing: content-box;
@@ -88,4 +143,3 @@ input:-webkit-autofill {
 	left: 0;
 	object-fit: cover;
 }
- 

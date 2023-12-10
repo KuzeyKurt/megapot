@@ -1,0 +1,89 @@
+.tournament {
+    background-color: $gray5;
+    border-radius: 19px;
+    //padding:69px 100px;
+    margin: 15px;
+    padding: 20px;
+    //display: flex;
+    //flex-wrap: wrap;
+
+    //justify-content: space-evenly;
+    //padding: 35px 0 35px 0;
+
+    &-box {
+        display: flex;
+        justify-content: space-between; //БЫЛ ЭРАУНД
+        width: -webkit-fill-available;
+        margin-bottom: 30px;
+
+
+        &__img {
+            //
+        }
+
+        &__params {
+            // width: 50%; //auto potom
+        }
+    }
+
+    &-params {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: -webkit-fill-available;
+        max-width: 50%; //МОЖЕМ УБРАТЬ
+
+        &__item {
+            display: flex;
+            justify-content: space-between;
+
+            &_inner {
+                color: #FFF;
+                font-family: Play, sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            &_yellow {
+                color: $yellow;
+            }
+
+            &_purple {
+                color: $purple;
+            }
+        }
+    }
+
+    &-description {
+
+        &__title {
+            color: $white;
+            font-family: Play, sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+
+            &_line {
+                height: 2px;
+                background-color: $white;
+                margin-bottom: 30px;
+            }
+        }
+
+        &__text {
+            color: $white;
+            font-family: Play, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+            text-align: justify;
+            padding-bottom: 20px;
+        }
+    }
+}
